@@ -1,0 +1,69 @@
+/* Green Theme */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #e8f5e9; /* Light green background */
+  color: #1b5e20;     /* Dark green text */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(27,94,32,0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #43a047;  /* Medium green button */
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #388e3c;
+}
+
+.timer {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#score {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.answers button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+#config {
+  margin-bottom: 20px;
+}
+
+#timerInput, #questionsInput {
+  width: 80px;
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}

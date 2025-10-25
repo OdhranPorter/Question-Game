@@ -1,0 +1,3 @@
+1. i had a problem with the game asking the same questions that have already been used, i did solve this using some code i found on a website.
+ when it loads one question the quesiton is loaded into a usedquestion array and when the next question is drawn it compares the text in that drawn question
+ to the questions inside the array to see if it has been asked before and then at the start of a new game i reset the array.

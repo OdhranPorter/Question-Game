@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Against the Clock Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Against the Clock Quiz Game</h1>
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <p>Random Money Value: <span id="moneyValue"></span></p>
+      <div id="config">
+        <div>
+          <label for="timerInput">Enter time per question in seconds</label>
+          <input type="number" id="timerInput" placeholder="60">
+        </div>
+        <div>
+          <label for="questionsInput">Enter number of questions per player</label>
+          <input type="number" id="questionsInput" placeholder="5">
+        </div>
+      </div>
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="hidden">
+      <h2 id="playerTurn"></h2>
+      <div class="timer">Time Left: <span id="timeLeft"></span> sec</div>
+      <div id="score">Score: <span id="scoreCount"></span> / <span id="maxQuestionsDisplay"></span></div>
+      <div id="question-container">
+        <div id="question" class="question"></div>
+        <div id="answers" class="answers"></div>
+      </div>
+    </div>
+
+    <!-- Next Turn Screen -->
+    <div id="next-turn-screen" class="hidden">
+      <h2>Player 1 is done</h2>
+      <p>Press the button to start Player 2 turn</p>
+      <button id="nextTurnBtn">Start Player 2 Turn</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="hidden">
+      <h2>Game Over</h2>
+      <p id="resultText"></p>
+      <p id="finalScores"></p>
+      <button id="restartBtn">Restart Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
